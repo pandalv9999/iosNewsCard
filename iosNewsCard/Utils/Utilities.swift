@@ -26,7 +26,7 @@ class Utilities {
 //        // Add the line to the text field
 //        textfield.layer.addSublayer(bottomLine)
 //
-        textfield.layer.cornerRadius = 20.0
+        textfield.layer.cornerRadius = 20.0 
         textfield.tintColor = UIColor.init(red:  CGFloat(red/255), green:CGFloat(green/255), blue:CGFloat(blue/255), alpha: 1)
         
     }

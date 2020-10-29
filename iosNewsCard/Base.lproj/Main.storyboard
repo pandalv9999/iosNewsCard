@@ -112,11 +112,12 @@
                         <outlet property="loginPlaceHolder" destination="I3z-y4-2wK" id="Y0R-S3-xnK"/>
                         <outlet property="passwordEditText" destination="yDG-aR-40i" id="4Lh-7x-MQ7"/>
                         <outlet property="usernameEditText" destination="Mru-hq-aLS" id="H6K-MH-Uwb"/>
+                        <segue destination="OhT-5H-OYT" kind="showDetail" identifier="goToMain" id="43o-0F-Eqv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-418.39999999999998" y="18.472906403940886"/>
+            <point key="canvasLocation" x="-401" y="52"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="4MR-wK-0Nd">
@@ -241,18 +242,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSp-vJ-xDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="19"/>
+            <point key="canvasLocation" x="-418" y="707"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Search-->
+        <scene sceneID="JNM-fm-g4b">
+            <objects>
+                <viewController id="haZ-n0-x6z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMj-zs-aF5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dvq-qB-Mcb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" selectedImage="search" id="Sm6-d8-OJN"/>
+                    <navigationItem key="navigationItem" id="Trr-cg-r9d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Htc-rK-9O8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2439" y="-92"/>
+        </scene>
+        <!--News-->
         <scene sceneID="eI8-Sl-NlE">
             <objects>
                 <viewController id="rm8-Ko-670" customClass="HomeViewController" customModule="iosNewsCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x7l-ZV-7tQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Home Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwf-Uq-oDF">
-                                <rect key="frame" x="105.66666666666669" y="395.66666666666669" width="164" height="21"/>
+                                <rect key="frame" x="105.66666666666669" y="368.66666666666669" width="164" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -265,10 +283,29 @@
                             <constraint firstItem="zwf-Uq-oDF" firstAttribute="centerY" secondItem="x7l-ZV-7tQ" secondAttribute="centerY" id="lJC-k5-MYr"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="News" image="home" selectedImage="home" id="mF0-Ix-LmN"/>
+                    <navigationItem key="navigationItem" id="6Ei-Cn-aFt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gp5-ZI-OEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1981" y="259"/>
+            <point key="canvasLocation" x="1649" y="-110"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="pOj-QJ-cth">
+            <objects>
+                <viewController id="7e4-tj-ZGT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="azn-n8-MJv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ScH-ot-BUX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="heart" selectedImage="heart" id="eph-0t-Ppv"/>
+                    <navigationItem key="navigationItem" id="O4L-VW-r4h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZL-nI-UDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3220" y="-92"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="5O5-Fb-Mo1">
@@ -278,11 +315,36 @@
             </objects>
             <point key="canvasLocation" x="-1171" y="19"/>
         </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="P3U-Ns-MhE">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" id="OhT-5H-OYT" customClass="MainTabBarController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="V7q-Qf-tfr"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UtC-IA-zxA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rm8-Ko-670" kind="relationship" relationship="viewControllers" id="3MI-tZ-IeW"/>
+                        <segue destination="haZ-n0-x6z" kind="relationship" relationship="viewControllers" id="jtH-MX-t7p"/>
+                        <segue destination="7e4-tj-ZGT" kind="relationship" relationship="viewControllers" id="5fU-pN-DIh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96x-s7-0id" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="-992"/>
+        </scene>
     </scenes>
     <resources>
         <image name="backwardArrow" width="26" height="26"/>
         <image name="forwardArrow" width="26" height="26"/>
+        <image name="heart" width="20" height="20"/>
+        <image name="home" width="20" height="20"/>
         <image name="newsLogo" width="225" height="225"/>
+        <image name="search" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
