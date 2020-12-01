@@ -25,6 +25,7 @@
 		2D5120912543C9DC0058E9BD /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5120902543C9DC0058E9BD /* LoginRepository.swift */; };
 		2D5120952543DA920058E9BD /* SignUpRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5120942543DA920058E9BD /* SignUpRepository.swift */; };
 		2D5120982543DABE0058E9BD /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5120972543DABE0058E9BD /* SignUpViewModel.swift */; };
+		2D9940092576268200D05237 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9940082576268200D05237 /* HomeViewModel.swift */; };
 		EDAC0140CAE56AACC32B1FEE /* Pods_iosNewsCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE14B03B8330D34E358A96A /* Pods_iosNewsCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		2D5120902543C9DC0058E9BD /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		2D5120942543DA920058E9BD /* SignUpRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRepository.swift; sourceTree = "<group>"; };
 		2D5120972543DABE0058E9BD /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		2D9940082576268200D05237 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		35D99D160B279682BE2A1BA4 /* Pods-iosNewsCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosNewsCard.release.xcconfig"; path = "Target Support Files/Pods-iosNewsCard/Pods-iosNewsCard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				2D51206B25437BC80058E9BD /* HomeViewController.swift */,
 				2D2FE5E1254B5EA800B554C3 /* NewsModel.swift */,
 				2D2FE610254B79CA00B554C3 /* HomeRepository.swift */,
+				2D9940082576268200D05237 /* HomeViewModel.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				2D2FE5E2254B5EA800B554C3 /* NewsModel.swift in Sources */,
 				2D51206C25437BC80058E9BD /* HomeViewController.swift in Sources */,
+				2D9940092576268200D05237 /* HomeViewModel.swift in Sources */,
 				2D5120952543DA920058E9BD /* SignUpRepository.swift in Sources */,
 				2D512057254379B80058E9BD /* LoginViewController.swift in Sources */,
 				2D5120782543B5520058E9BD /* Utilities.swift in Sources */,

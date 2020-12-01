@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mJw-4L-Vcq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mJw-4L-Vcq">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -264,27 +264,30 @@
         <!--News-->
         <scene sceneID="eI8-Sl-NlE">
             <objects>
-                <viewController id="rm8-Ko-670" customClass="HomeViewController" customModule="iosNewsCard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="rm8-Ko-670" customClass="HomeViewController" customModule="iosNewsCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x7l-ZV-7tQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Home Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwf-Uq-oDF">
-                                <rect key="frame" x="105.66666666666669" y="368.66666666666669" width="164" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yDD-6c-0bp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GLq-mz-DwP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zwf-Uq-oDF" firstAttribute="centerX" secondItem="x7l-ZV-7tQ" secondAttribute="centerX" id="4yd-LM-rzY"/>
-                            <constraint firstItem="zwf-Uq-oDF" firstAttribute="centerY" secondItem="x7l-ZV-7tQ" secondAttribute="centerY" id="lJC-k5-MYr"/>
+                            <constraint firstItem="GLq-mz-DwP" firstAttribute="bottom" secondItem="yDD-6c-0bp" secondAttribute="bottom" id="PZD-dT-9tO"/>
+                            <constraint firstItem="yDD-6c-0bp" firstAttribute="leading" secondItem="GLq-mz-DwP" secondAttribute="leading" id="cIK-E8-fhi"/>
+                            <constraint firstItem="GLq-mz-DwP" firstAttribute="trailing" secondItem="yDD-6c-0bp" secondAttribute="trailing" id="hj5-mB-RaB"/>
+                            <constraint firstItem="yDD-6c-0bp" firstAttribute="top" secondItem="GLq-mz-DwP" secondAttribute="top" id="t3D-7V-XWx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="home" selectedImage="home" id="mF0-Ix-LmN"/>
                     <navigationItem key="navigationItem" id="6Ei-Cn-aFt"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="yDD-6c-0bp" id="lkv-26-PnX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gp5-ZI-OEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
